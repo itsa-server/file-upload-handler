@@ -1,0 +1,56 @@
+{
+    "name": "file-upload-handler",
+    "version": "0.0.1",
+    "description": "Handles fileuploads and streams the progress to the client",
+    "author": [
+        {
+            "name": "Marco Asbreuk",
+            "email": "marco@itsasbreuk.nl"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itsa-server/file-upload-handler"
+    },
+    "bugs": {
+        "url": "https://github.com/itsa-server/file-upload-handler/issues"
+    },
+    "keywords": [
+        "itsa",
+        "itsa-server",
+        "file",
+        "upload",
+        "file-upload",
+        "file-upload-handler"
+    ],
+    "main": "index.js",
+    "engines": {
+        "node": "*"
+    },
+    "dependencies": {
+        "utils": "itsa/utils",
+        "js-ext": "itsa/js-ext",
+        "writestream-promise": "itsa-server/writestream-promise",
+        "fs-extra": "^0.18.3",
+        "fs-promise": "^0.3.1"
+    },
+    "devDependencies": {
+        "chai": "^1.9.1",
+        "istanbul": "^0.3.0",
+        "jshint": "^2.5.5",
+        "mocha": "^1.21.4"
+    },
+    "scripts": {
+        "pretest": "jshint  ./lib/*.js",
+        "test": "mocha tests/*.js  && istanbul cover $(which _mocha) -- tests/*.js",
+        "lint": "jshint ./lib/*.js"
+    },
+    "homepage": "http://itsa.github.io",
+    "maintainers": [
+        {
+            "name": "Marco Asbreuk",
+            "email": "marco@itsasbreuk.nl"
+        }
+    ],
+    "license": "New BSD"
+}
