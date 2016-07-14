@@ -1,6 +1,6 @@
 {
   "name": "itsa-fileuploadhandler",
-  "version": "0.0.5",
+  "version": "0.0.12",
   "description": "Handles fileuploads and streams the progress to the client",
   "author": [
     {
